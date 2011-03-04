@@ -1,0 +1,38 @@
+# UFW NAT MANAGER
+__Zenobius Jiricek (airtonix@gmail.com)__
+
+UFW is the commandline firewall manager for Ubuntu Server, it serves as 
+a simple frontend to IPtables.
+
+This project allows a user to simplify the process of enabling the network
+address translation functionality of UFW (and thereby IPtables), without
+spending the time editing the various required files.
+
+At the moment it is only a console based menu interface, so the next 
+stage will be to separate the logic out into something a pyGtk or pyQT
+interface module can make use of.
+
+# Setup 
+
+You need python dist-utils installed before proceeding.
+
+    sudo python ./setup.py install
+    
+# Usage
+
+Assuming the installation went according to plan, usage is currently limited to 
+a menu system : 
+
+    sudo ufw-nat
+
+
+# Todo : 
+
+1. provide argparse/optionparser command line inputs
+hopefully, this will let users bypass the need to navigate the menu system
+1. when listing interfaces, provide their current IP address & subnetmask, 
+and gateway for ipv4 and ipv6
+
+# License
+
+at the moment, all rights reserved until I determine a more appropriate license.  
